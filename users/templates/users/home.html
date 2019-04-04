@@ -1,0 +1,8 @@
+{% extends 'distros/base.html' %}
+{% block content %}
+{% for distro in distroSites %}
+<h1>{{distro.site}}</h1>
+<p>At {{distro.address}} Last Updated {{distro.last_updated}}</p>
+<p>Service Info {{distro.info}}</p>
+{% endfor %}
+{% endblock content %}
