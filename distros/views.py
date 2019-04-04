@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-  return HttpResponse('<h1>Distro List</h1>')
+  return render(request, 'distros/home.html')
 
 def detail(request):
-  return HttpResponse('<h1>Detail View</h1>')
+  return render(request, 'distros/detail.html')
