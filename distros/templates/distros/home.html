@@ -1,8 +1,15 @@
 {% extends 'distros/base.html' %}
 {% block content %}
   {% for distro in distroSites %}
-    <h1>{{distro.site}}</h1>
-    <p>At {{distro.address}} Last Updated {{distro.last_updated}}</p>
-    <p>Service Info {{distro.info}}</p>
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ distro.address }}</a>
+          <small class="text-muted">{{ distro.last_updated}}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{ distro.site }}</a></h2>
+        <p class="article-content">{{ distro.info }}</p>
+      </div>
+    </article>
   {% endfor %}
 {% endblock content %}
