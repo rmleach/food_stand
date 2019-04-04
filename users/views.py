@@ -1,8 +1,27 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+distroSites = [
+    {
+        'site': 'Church of Rufus',
+        'address': '123 Elm St',
+        'info': 'COR Info',
+        'last_updated': '11 Mar 2019'
+    },
+    {
+        'site': 'Food Not Bombs Denver',
+        'address': '123 14th Ave',
+        'info': 'FNB Info',
+        'last_updated': '13 Mar 2019'
+    }
+]
+
 
 def home(request):
-  return HttpResponse('<h1>User List</h1>')
+  context = {
+      'distroSites': distroSites
+  }
+  return render(request, 'users/home.html', context)
+
 
 def detail(request):
-  return HttpResponse('<h1>User Detail View</h1>')
+  return render(request, 'users/detail.html', {'site': 'detail'})
