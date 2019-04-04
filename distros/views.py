@@ -22,4 +22,4 @@ def home(request):
   return render(request, 'distros/home.html', context)
 
 def detail(request):
-  return render(request, 'distros/detail.html')
+  return render(request, 'distros/detail.html', {'site': 'detail'})
