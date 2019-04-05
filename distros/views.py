@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 distroSites = [
   {
@@ -17,7 +18,7 @@ distroSites = [
 
 def home(request):
   context = {
-    'distroSites': distroSites
+    'distroSites': Post.objects.all()
   }
   return render(request, 'distros/home.html', context)
 

@@ -1,0 +1,16 @@
+{% extends 'distros/base.html' %}
+{% block content %}
+<h2>Welcomes {{user.username}}</h2>
+{% for distro in distroSites %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ distro.address }}</a>
+      <small class="text-muted">{{ distro.last_updated}}</small>
+    </div>
+    <h2><a class="article-title" href="#">{{ distro.site }}</a></h2>
+    <p class="article-content">{{ distro.info }}</p>
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}
