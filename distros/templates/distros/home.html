@@ -3,6 +3,7 @@
   <h2>Welcome {{user.username}}</h2>
   {% for distro in distroSites %}
     <article class="media content-section">
+      <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'
       <div class="media-body">
         <div class="article-metadata">
           <a class="mr-2" href="#">{{ distro.address }}</a>

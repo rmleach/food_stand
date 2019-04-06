@@ -1,6 +1,7 @@
 body {
-  background: #fafafa;
-  color: #9c6a6a;
+  background: #470A1F;
+  /* background: #fafafa; */
+  color: #470A1F;
   margin-top: 5rem;
 }
 
@@ -10,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: #470A1F;
 }
 
 ul {
@@ -22,11 +23,11 @@ ul {
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #FA16B4;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #FA16B4;
 }
 
 .site-header .navbar-nav .nav-link.active {
@@ -42,11 +43,11 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: #470A1F;
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #FA16B4;
   text-decoration: none;
 }
 

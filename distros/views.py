@@ -20,7 +20,11 @@ def home(request):
   context = {
     'distroSites': Post.objects.all()
   }
-  return render(request, 'distros/home.html', context)
+  mapbox_access_token = 'pk.eyJ1IjoibGVhY2hpc2FuIiwiYSI6ImNqdTRlZzF6bzB4NGc0M3Bkd3FwZ3QwNG4ifQ.ifl_XV7nHgm1qpoaMp2uKw'
+  return render(request, 'distros/home.html', context,{'mapbox_access_token': mapbox_access_token})
+
+
+
 
 def detail(request):
   return render(request, 'distros/detail.html', {'site': 'detail'})

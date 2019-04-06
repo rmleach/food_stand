@@ -6,6 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{% static 'distros/main.css' %}">
@@ -41,9 +43,6 @@
   </header>
   <main role="main" class="container">
     <div class="row">
-      <div class="col-md-8">
-        {% block content %}{% endblock %}
-      </div>
       <div class="col-md-4">
         <div class="content-section">
           <h3>Our Sidebar</h3>
@@ -57,6 +56,9 @@
           </p>
         </div>
       </div>
+      <div class="col-md-8">
+        {% block content %}{% endblock %}
+      </div>
     </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -67,6 +69,14 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoibGVhY2hpc2FuIiwiYSI6ImNqdTRlZzF6bzB4NGc0M3Bkd3FwZ3QwNG4ifQ.ifl_XV7nHgm1qpoaMp2uKw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11'
+    });
   </script>
 </body>
 
