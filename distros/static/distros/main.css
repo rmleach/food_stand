@@ -1,6 +1,9 @@
+html {
+}
+
 body {
   background: #fafafa;
-  color: #9c6a6a;
+  color: #470A1F;
   margin-top: 5rem;
 }
 
@@ -10,7 +13,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: #470A1F;
+  font-family: 'Special Elite',
+  cursive;
+}
+
+.img-fluid {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-items: center;
 }
 
 ul {
@@ -18,19 +30,77 @@ ul {
 }
 
 .bg-steel {
-  background-color: #556941;
+  background-color: #FA16B4;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: white;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #470A1F;
 }
 
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
+}
+
+.navbar-brand{
+  display: flex;  
+  font-family: 'Special Elite',
+  cursive; 
+  color: #FA16B4;
+  font-size: 2em;
+}
+
+.home-logo {
+  width: 100%;
+  margin-top: -4rem;
+}
+
+.home-logo > h1 {
+  display: flex;
+  font-family: 'Special Elite',
+  cursive;
+  color: #470A1F;
+  font-size: 3em;
+  justify-content: center;
+  margin: 0;
+}
+
+.home-buttons {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-muted{
+  display:flex;
+  overflow: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn.btn-primary.btn-lg {
+  display: flex;
+  background: #556941;
+  justify-content: center;
+  margin: 10px 0 5px 0px;
+}
+
+.btn.btn-primary.btn-lg:active {
+  background: #FA16B4;
+  justify-self: center;
+}
+
+.btn-primary{
+  border-color: #556941;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #FA16B4;
 }
 
 .content-section {
@@ -86,4 +156,11 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+.h2-message > h2{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin: .8em;
 }

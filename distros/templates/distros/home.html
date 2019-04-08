@@ -1,16 +1,21 @@
 {% extends 'distros/base.html' %}
 {% block content %}
-  <h2>Welcome {{user.username}}</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="content-section">
+        <div id='map' style='width: 100%; min-height: 300px;'></div>
+      </div>
+    </div>
   {% for distro in distroSites %}
     <article class="media content-section">
       <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'>
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ distro.address }}</a>
+          <a class="mr-2" href="#">{{ distro.site }}</a>
           <small class="text-muted">{{ distro.last_updated }}</small>
         </div>
         <h2><a class="article-title"
-            href="{{distro.pk}}/">{{ distro.site }}</a></h2>
+            href="{{distro.pk}}/">{{ distro.address }}</a></h2>
         <p class="article-content">{{ distro.info }}</p>
       </div>
     </article>

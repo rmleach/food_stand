@@ -1,6 +1,9 @@
 {% extends 'distros/base.html' %}
+{% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
+
+<img src="{% static 'images/Food_Not_Bombs_(emblem).png/' %}" class='img-fluid' alt='Food Stand!' height='100'>
 <div class='content-section'>
   <form method='POST'>
     {% csrf_token %}
@@ -9,11 +12,12 @@
       {{form|crispy}}
     </fieldset>
     <div class='form-group'>
-      <button class='btn btn-outline-info' type='submit'>Register</button>
+      <button class='btn btn-outline-info' type='submit'>Login</button>
     </div>
   </form>
   <div class='border-top pt-3'>
     <small class='text-muted'>Not Registered? <a class='ml-2' href='{% url 'register' %}'>Register</a></small>
   </div>
+
 </div>
 {% endblock content %}

@@ -8,9 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{% static 'distros/main.css' %}"> 
+  
   {% if title %}
   <title>Distro List - {{ site }}</title>
   {% else %}
@@ -29,13 +31,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="/">Home</a>
-            <a class="nav-item nav-link" href="/users">Users</a>
           </div>
-          <!-- Navbar Right Side -->
           <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home</a>
             {% if user.is_authenticated %}
-              <span>Welcome {{user.username}}</span> |
               <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
             {% else %}
               <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
@@ -47,12 +46,6 @@
     </nav>
   </header>
   <main role="main" class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="content-section">
-          <div id='map' style='width: 100%; min-height: 300px;'></div>
-        </div>
-      </div>
       <div class="col-md-8">
         {% if messages %}
           {% for message in messages %}

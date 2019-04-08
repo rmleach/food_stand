@@ -1,7 +1,12 @@
 {% extends 'distros/base.html' %}
-
+{% load static %}
 {% block content %}
-  <h2>You Have Been Logged Out!</h2>
+<div>
+  <img src="{% static 'images/Food_Not_Bombs_(emblem).png/' %}" class='img-fluid' alt='Food Stand!' height='100'>
+</div>
+<div class='h2-message'>
+  <h2>You've Been Logged Out!</h2>
+</div>
   <div class='border-top pt-3'>
     <small class='text-muted'>
       Login Again?<a class='ml-2' href='{% url 'login' %}'>Login</a>
