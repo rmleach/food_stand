@@ -1,0 +1,14 @@
+{% extends 'distros/base.html' %}
+{% block content %}
+  <article class="media content-section">
+    <img class='rounded-circle article-img' src='{{object.address.profile.image.url}}'>
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#">{{ object.address }}</a>
+        <small class="text-muted">{{ object.last_updated}}</small>
+      </div>
+      <h2 class="article-title">{{ object.site }}</h2>
+      <p class="article-content">{{ object.info }}</p>
+    </div>
+  </article>
+{% endblock content %}

@@ -3,13 +3,14 @@
   <h2>Welcome {{user.username}}</h2>
   {% for distro in distroSites %}
     <article class="media content-section">
-      <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'
+      <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'>
       <div class="media-body">
         <div class="article-metadata">
           <a class="mr-2" href="#">{{ distro.address }}</a>
-          <small class="text-muted">{{ distro.last_updated}}</small>
+          <small class="text-muted">{{ distro.last_updated }}</small>
         </div>
-        <h2><a class="article-title" href="#">{{ distro.site }}</a></h2>
+        <h2><a class="article-title"
+            href="{{distro.pk}}/">{{ distro.site }}</a></h2>
         <p class="article-content">{{ distro.info }}</p>
       </div>
     </article>
