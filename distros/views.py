@@ -8,8 +8,8 @@ def home(request):
   context = {
     'distroSites': Post.objects.all()
   }
-  mapbox_access_token = 'pk.eyJ1IjoibGVhY2hpc2FuIiwiYSI6ImNqdTRlZzF6bzB4NGc0M3Bkd3FwZ3QwNG4ifQ.ifl_XV7nHgm1qpoaMp2uKw'
-  return render(request, 'distros/home.html', context,{'mapbox_access_token': mapbox_access_token})
+  google_access_token = 'AIzaSyBI7H13xNvaarHZgcRU0akjiHnd_saxE_Y'
+  return render(request, 'distros/home.html', context,{'google_access_token': google_access_token})
 
 class PostListView(ListView):
   model = Post
