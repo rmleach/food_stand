@@ -9,6 +9,7 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{% static 'distros/main.css' %}"> 
@@ -46,7 +47,6 @@
     </nav>
   </header>
   <main role="main" class="container">
-      <div class="col-md-8">
         {% if messages %}
           {% for message in messages %}
             <div class='alert alert-{{message.tags}}'>

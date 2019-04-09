@@ -1,11 +1,12 @@
 {% extends 'distros/base.html' %}
 {% block content %}
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="content-section">
         <div id='map' style='width: 100%; min-height: 300px;'></div>
       </div>
     </div>
+  <div class="col-md-7">
   {% for distro in distroSites %}
     <article class="media content-section">
       <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'>
