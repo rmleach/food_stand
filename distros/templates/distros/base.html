@@ -67,45 +67,71 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <script>
+    const locations = [
+      ['Civic Center Place', 39.739433, -104.98885],
+      ['3501 E. 46th Ave, Denver, CO 80216', 39.7802868, -104.8419213],
+      ['1717 E. Colfax Avenue, Denver, CO 80218', 39.7402404, -104.9666984],
+      ['Commons Park', 39.7571, -105.0050],
+      ['2877 Lawrence St, Denver, CO 80205', 39.7402404, -104.9666984],
+      ['1900 California St, Denver, CO 80216', 39.747979, -104.988572]
+    ];
+
     var map, infoWindow;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: { lat: -34.397, lng: 150.644 },
-          zoom: 10
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        },
+        zoom: 12
+      });
+      infoWindow = new google.maps.InfoWindow;
+
+      var marker, i;
+
+      for (var i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new
+          google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
         });
-        infoWindow = new google.maps.InfoWindow;
 
-        
-
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function (position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            map.setCenter(pos);
-          }, function () {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+          return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
       }
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-          'Error: The Geolocation service failed.' :
-          'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          marker.setPosition(pos);
+          map.setCenter(pos);
+        }, function () {
+          handleLocationError(true, infoWindow, map.getCenter());
+        });
+      } else {
+        handleLocationError(false, infoWindow, map.getCenter());
       }
-    </script>
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindow.setPosition(pos);
+      infoWindow.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+      infoWindow.open(map);
+    }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI7H13xNvaarHZgcRU0akjiHnd_saxE_Y&callback=initMap"
-    async defer></script>
+    async defer>
+  </script>
 </body>
 
 </html>

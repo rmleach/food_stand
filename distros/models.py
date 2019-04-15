@@ -10,8 +10,9 @@ class Post(models.Model):
   lat = models.FloatField()
   lng = models.FloatField()
   info = models.TextField()
-  start_time = models.DateTimeField(auto_now=True)
+  start_time = models.DateTimeField(auto_now=False)
   author = models.ForeignKey(User, on_delete=models.CASCADE)
+  image = models.ImageField(blank=True)
 
   def __str__(self):
     return self.site

@@ -9,14 +9,14 @@
   <div class="col-md-7">
   {% for distro in distroSites %}
     <article class="media content-section">
-      <img class='rounded-circle article-img' src='{{ Post.site.profile.image.url }}'>
+      <img class='rounded-circle article-img' src='{{ user.profile.image.url }}'>
       <div class="media-body">
         <div class="article-metadata">
-          <a class="mr-2" href="#">{{ distro.site }}</a>
+          <a class="mr-2" href="#">{{ distro.author }}</a>
           <small class="text-muted">{{ distro.start_time }}</small>
         </div>
-        <h2><a class="article-title"
-            href="{{distro.pk}}/">{{ distro.address }}</a></h2>
+        <h5><a class="article-title"
+            href="{{distro.pk}}/">{{ distro.address }}</a></h5>
         <p class="article-content">{{ distro.info }}</p>
       </div>
     </article>
