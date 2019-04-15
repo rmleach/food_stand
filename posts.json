@@ -1,0 +1,169 @@
+[{
+    "address": "Civic Center Place",
+    "lat": "39.739433",
+    "lng": "-104.98885",
+    "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+    "start_time": "April 16, 2019, 4:00 p.m.",
+    "user_id": 1
+  }, {
+    "address": "3501 E. 46th Ave, Denver, CO 80216",
+    "lat": "39.7802868",
+    "lng": "-104.8419213",
+    "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+    "start_time": "April 16, 2019, 6:00 a.m.",
+    "user_id": 2
+  }, {
+    "address": "1717 E. Colfax Avenue, Denver, CO 80218",
+    "lat": "39.7402404",
+    "lng": "-104.9666984",
+    "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+    "start_time": "April 16, 2019, 9:00 a.m.",
+    "user_id": 3
+  }, {
+    "address": "Commons Park",
+    "lat": "39.7571",
+    "lng": "105.0050",
+    "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+    "start_time": "April 16, 2019, 12:00 p.m.",
+    "user_id": 1
+  }, {
+    "address": "2877 Lawrence St, Denver, CO 80205",
+    "lat": "39.7402404",
+    "lng": "-104.9666984",
+    "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+    "start_time": "April 16, 2019, 9:00 a.m.",
+    "user_id": 3
+  }, {
+    "address": "1900 California St, Denver, CO 80216",
+    "lat": "39.747979",
+    "lng": "-104.988572",
+    "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+    "start_time": "April 16, 2019, 6:00 a.m.",
+    "user_id": 2
+  }, {
+      "address": "Civic Center Place",
+      "lat": "39.739433",
+      "lng": "-104.98885",
+      "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+      "start_time": "April 17, 2019, 4:00 p.m.",
+      "user_id": 1
+    }, {
+      "address": "3501 E. 46th Ave, Denver, CO 80216",
+      "lat": "39.7802868",
+      "lng": "-104.8419213",
+      "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+      "start_time": "April 17, 2019, 6:00 a.m.",
+      "user_id": 2
+    }, {
+      "address": "1717 E. Colfax Avenue, Denver, CO 80218",
+      "lat": "39.7402404",
+      "lng": "-104.9666984",
+      "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+      "start_time": "April 17, 2019, 9:00 a.m.",
+      "user_id": 3
+    }, {
+      "address": "Commons Park",
+      "lat": "39.7571",
+      "lng": "105.0050",
+      "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+      "start_time": "April 17, 2019, 12:00 p.m.",
+      "user_id": 1
+    }, {
+      "address": "2877 Lawrence St, Denver, CO 80205",
+      "lat": "39.7402404",
+      "lng": "-104.9666984",
+      "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+      "start_time": "April 17, 2019, 9:00 a.m.",
+      "user_id": 3
+    }, {
+      "address": "1900 California St, Denver, CO 80216",
+      "lat": "39.747979",
+      "lng": "-104.988572",
+      "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+      "start_time": "April 17, 2019, 6:00 a.m.",
+      "user_id": 2
+    }, {
+        "address": "Civic Center Place",
+        "lat": "39.739433",
+        "lng": "-104.98885",
+        "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+        "start_time": "April 18, 2019, 4:00 p.m.",
+        "user_id": 1
+      }, {
+        "address": "3501 E. 46th Ave, Denver, CO 80216",
+        "lat": "39.7802868",
+        "lng": "-104.8419213",
+        "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+        "start_time": "April 18, 2019, 6:00 a.m.",
+        "user_id": 2
+      }, {
+        "address": "1717 E. Colfax Avenue, Denver, CO 80218",
+        "lat": "39.7402404",
+        "lng": "-104.9666984",
+        "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+        "start_time": "April 18, 2019, 9:00 a.m.",
+        "user_id": 3
+      }, {
+        "address": "Commons Park",
+        "lat": "39.7571",
+        "lng": "105.0050",
+        "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+        "start_time": "April 18, 2019, 12:00 p.m.",
+        "user_id": 1
+      }, {
+        "address": "2877 Lawrence St, Denver, CO 80205",
+        "lat": "39.7402404",
+        "lng": "-104.9666984",
+        "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+        "start_time": "April 18, 2019, 9:00 a.m.",
+        "user_id": 3
+      }, {
+        "address": "1900 California St, Denver, CO 80216",
+        "lat": "39.747979",
+        "lng": "-104.988572",
+        "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+        "start_time": "April 18, 2019, 6:00 a.m.",
+        "user_id": 2
+      }, {
+        "address": "Civic Center Place",
+        "lat": "39.739433",
+        "lng": "-104.98885",
+        "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+        "start_time": "April 19, 2019, 4:00 p.m.",
+        "user_id": 1
+      }, {
+        "address": "3501 E. 46th Ave, Denver, CO 80216",
+        "lat": "39.7802868",
+        "lng": "-104.8419213",
+        "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+        "start_time": "April 19, 2019, 6:00 a.m.",
+        "user_id": 2
+      }, {
+        "address": "1717 E. Colfax Avenue, Denver, CO 80218",
+        "lat": "39.7402404",
+        "lng": "-104.9666984",
+        "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+        "start_time": "April 19, 2019, 9:00 a.m.",
+        "user_id": 3
+      }, {
+        "address": "Commons Park",
+        "lat": "39.7571",
+        "lng": "105.0050",
+        "info": "Radical food sharing service for the denver area! Catering actions, events, and street outreach!",
+        "start_time": "April 19, 2019, 12:00 p.m.",
+        "user_id": 1
+      }, {
+        "address": "2877 Lawrence St, Denver, CO 80205",
+        "lat": "39.7402404",
+        "lng": "-104.9666984",
+        "info": "In the daily pursuit of its mission DenUM is proud to serve the immediate and lng-term needs of the most vulnerable in our community, looking beyond crisis to a society of equality, justice, and compassion. DenUm assists with food boxes, diapers and formula, employment services, ID and utilities. Hours: M, T, Th, F 9 am - 3:30 pm, Wednesday 9 am - Noon.",
+        "start_time": "April 19, 2019, 9:00 a.m.",
+        "user_id": 3
+      }, {
+        "address": "1900 California St, Denver, CO 80216",
+        "lat": "39.747979",
+        "lng": "-104.988572",
+        "info": "Two meals a day are served 7 days a week. Breakfast is served at 6 am Monday - Saturday and at 9:30 am on Sundays. Dinner is served each day at 5:30 pm.",
+        "start_time": "April 19, 2019, 6:00 a.m.",
+        "user_id": 2
+      }]

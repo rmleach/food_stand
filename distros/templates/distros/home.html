@@ -9,11 +9,11 @@
   <div class="col-md-7">
   {% for distro in distroSites %}
     <article class="media content-section">
-      <img class='rounded-circle article-img' src='{{post.site.profile.image.url}}'>
+      <img class='rounded-circle article-img' src='{{ Post.site.profile.image.url }}'>
       <div class="media-body">
         <div class="article-metadata">
           <a class="mr-2" href="#">{{ distro.site }}</a>
-          <small class="text-muted">{{ distro.last_updated }}</small>
+          <small class="text-muted">{{ distro.start_time }}</small>
         </div>
         <h2><a class="article-title"
             href="{{distro.pk}}/">{{ distro.address }}</a></h2>

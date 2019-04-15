@@ -1,0 +1,12 @@
+{
+  "model": "account.User",
+  "lookup": "pk",
+  "mapping": {
+    "site": "site",
+    "address": "address",
+    "lat": "lat",
+    "lng": "lng",
+    "info": "info",
+    "start_time": "start_time"
+  }
+}
